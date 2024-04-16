@@ -1,3 +1,4 @@
+#users controller to handle the CRUD operations
 class UsersController < ApplicationController
   before_action :find_user, only: [:update]
 

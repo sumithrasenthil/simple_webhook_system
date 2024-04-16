@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  end_point: MyText
+  secret: MyString
+  active: false
+  event_type: 1
+
+two:
+  end_point: MyText
+  secret: MyString
+  active: false
+  event_type: 1

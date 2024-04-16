@@ -48,3 +48,4 @@ end
 
 gem "sidekiq", "~> 7.2"
 gem 'redis'
+gem 'httparty'
