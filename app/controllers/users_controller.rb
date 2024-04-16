@@ -2,10 +2,11 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:update]
 
   def create
-    if User.create(user_params)
-      render json: { success: true, message: 'User created successfully' }
+    user = User.new(user_params)
+    if user.save
+      render json: { success: true, message: 'User created successfully', user: user }, status: :created
     else
-      render json: { success: false, message: 'User not created', errors: @user.errors.full_messages.to_sentence }
+      render json: { success: false, message: 'User not created', errors: user.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
