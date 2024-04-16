@@ -150,6 +150,8 @@ GEM
     rake (13.2.1)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
+    redis (5.2.0)
+      redis-client (>= 0.22.0)
     redis-client (0.22.0)
       connection_pool
     reline (0.5.1)
@@ -178,6 +180,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8, >= 7.0.8.1)
+  redis
   sidekiq (~> 7.2)
   tzinfo-data
 
